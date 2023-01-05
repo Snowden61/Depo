@@ -1,0 +1,43 @@
+Random rastgele = new Random();
+            Random rastgele2 = new Random();
+            string[] şiir = {"Library"};
+        bsl:
+            Console.Write("Hi, How many lines should the new poem have?");
+            int d;
+            d = Convert.ToInt32(Console.ReadLine());
+            for(int j=0;j<d;j++)
+            {
+                Console.WriteLine();
+                for (int i = 0; i < 5; i++)
+                {
+                    int a = rastgele2.Next(şiir.Length);
+                    Console.Write(şiir[a]);
+
+                }
+                Console.Write("\n");
+                for (int i = 0; i < 5; i++)
+                {
+                    int a = rastgele2.Next(şiir.Length);
+                    Console.Write(şiir[a]);
+
+                }
+                Console.Write("\n");
+                for (int i = 0; i < 5; i++)
+                {
+                    int a = rastgele2.Next(şiir.Length);
+                    Console.Write(şiir[a]);
+
+                }
+                Console.Write("\n");
+                for (int i = 0; i < 5; i++)
+                {
+                    int a = rastgele2.Next(şiir.Length);
+                    Console.Write(şiir[a]);
+
+                }
+                Console.Write("\n");
+
+
+            }
+            System.Threading.Thread.Sleep(5000);
+            goto bsl;
